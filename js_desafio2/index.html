@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="mystyle.css">
+   <title>Document</title>
+</head>
+
+<body>
+   <h1>Calculadora de IMC</h1>
+
+   <form action="" method="post" id="formulario">
+      <p><label for="nome">Nome: </label><input id="nome" name="nome" autofocus type="text" size="40"></p>
+      <p><label for="idade">Idade: </label><input id="idade" name="idade" type="number" min="0" max="130"
+            style="width: 50px;"></p>
+      <p><label for="peso">Peso: </label><input id="peso" name="peso" type="number" step="0.01" min="0.0"
+            style="width: 50px;"></p>
+      <p><label for="alt">Altura: </label><input id="alt" name="alt" type="number" step="0.01" min="0" size="5"
+            style="width: 50px;"></p>
+      <button type="submit" id="btnEnviar">Enviar</button>
+      <button type="reset" id="btnLimpar">Limpar</button></p>
+      <label for="resultadoImc">IMC: </label><input type="number" id="resultadoImc" name="imc" value='0.0' disabled>
+      <b><span id="aviso"></span></b></p>
+   </form>
+
+   <div id="CardResultado">
+      <h2>IMC</h2>
+      <p class="pessoa" id="cardNome"></p>
+      <p class="pessoa" id="cardIddade"></p>
+      <p class="pessoa" id="cardPeso"></p>
+      <p class="pessoa" id="cardAltura"></p>
+      <p class="pessoa" id="cardImc"></p>
+      <p class="pessoa"></p>
+   </div>
+
+
+   <script src="script.js"></script>
+
+</body>
+
+</html>

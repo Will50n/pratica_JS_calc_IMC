@@ -1,0 +1,22 @@
+body{
+   font-family: "Roboto", sans-serif;
+}
+
+h1 {
+   text-align: center;
+}
+
+form {
+   background-color: rgb(116, 183, 192);
+   margin: 20px;
+   padding: 15px;
+   border-radius: 10px;
+   width:fit-content;
+   float: left;
+
+}
+
+#CardResultado {
+   margin: 20px;
+   padding: 15px;
+}
